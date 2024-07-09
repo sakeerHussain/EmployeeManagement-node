@@ -1,0 +1,244 @@
+/* Signup and Login page style */
+
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #dfe9f5;
+}
+
+.wrapper{
+    width:330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center; 
+    box-shadow: 0 20px 35 px rgba(0, 0, 0, 0.1);
+}
+.h1{
+    font-size: 2rem;
+    color: #07001f;
+    margin-bottom: 1.2rem;
+}
+.error{
+    color: red;
+    font-size: 10px;
+}
+.passwordError{
+    color: red;
+    font-size: 10px;
+}
+form input{
+    width: 92%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+}
+#checkbox{
+    margin-bottom: 4px;
+}
+button{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding:10px 0;
+    border-radius: 20px;
+    outline:none;
+    border:none;
+    width: 90%;
+    background: rgb(17, 107, 143);
+    
+}
+
+button:hover{
+    background: rgba(17, 107, 143, 0.877);
+}
+input:focus{
+    border: 1px solid #7b2b2b;
+}
+
+.terms{
+    margin-top: 0.2rem;
+}
+.terms input{
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.term label{
+    font-size:  0.7rem;
+}
+.term a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.member{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+.member a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+
+.recover{
+    text-align: right;
+    font-size: 0.7rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+
+.recover a{
+    text-decoration: none;
+    color: #464647;
+    
+}
+#status{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slide Login form
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost' ,sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+   }
+   .main{
+       width: 350px;
+       height: 500px;
+       overflow: hidden;
+       background: red;
+       background: url("") no-repeat center / cover;
+       border-radius: 10px;
+       box-shadow: 5px 20px 50px #000;
+   }
+   
+   #chk{
+       display: none;
+   }
+   .signUp{
+       position: relative;
+       width: 100%;
+       height: 100%;
+   
+   }
+   label{
+       color: #fff;
+       font-size: 2.3rem;
+       justify-content: center;
+       display: flex;
+       margin: 60px;
+       font-weight: bold;
+       cursor: pointer;
+       transition: .5s ease-in-out;
+   }
+   
+   input{
+       width: 60%;
+       height:20px;
+       background: #e0dede;
+       justify-content: center;
+       display: flex;
+       margin: 20px auto;
+       padding: 10px;
+       border:none;
+       outline:none;
+       border-radius: 5px;
+   }
+   button{
+       width:60%;
+       height:40px;
+       margin: 10px auto;
+       justify-content: center;
+       display: block;
+       color:#fff;
+       background: #573b8a;
+       font-size: 1em;
+       font-weight: bold;
+       margin-top:20px;
+       outline: none;
+       border:none;
+       border-radius: 5px;
+       transition: .2s ease-in;
+       cursor: pointer;
+   
+   }
+   
+   button:hover{
+       background: #6d44b8;
+   }
+   
+   .logIn{
+       height:460px;
+       background: #eee;
+       border-radius: 60% / 10%;
+       transform: translateY(-180px);
+       transition: .8s ease-in-out;
+   }
+   .logIn label{
+       color:#573b8a;
+       transform: scale(.6);
+   }
+   
+   #chk:checked ~ .logIn{
+       transform: translateY(-500px);
+   }
+   
+   #chk:checked ~ .logIn label{
+       transform: scale(1);
+   }
+   #chk:checked ~ .signUp label{
+       transform: scale(.6);
+   }
+   
+   
+   
+   
+   
+   
+    */

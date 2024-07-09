@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/verifyOTP.css">
+    <title>OTP-verification</title>
+</head>
+<body>
+    <div class="container">
+        <h1>OTP Code Verification</h1>
+        <form  id="">
+          <label for="otpCode">Enter the OTP code sent to your email:</label>
+          <span id="otpError"></span>
+          <input type="number" id="otpCode" name="otp" maxlength="6" pattern="^\d{6}$">
+          <button  id="verifyOTP"  type="button">Verify OTP Code</button>
+        </form>
+      </div>
+      <script src="js/verifyOTP.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

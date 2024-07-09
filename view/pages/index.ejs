@@ -1,0 +1,120 @@
+
+<%- include('../partials/head') %>
+<body>
+
+    <div class="container-fluid frontPage px-0">
+        <div class="col-lg-12">
+
+            <%- include('../partials/aside') %>
+
+            <!-- Main page -->
+            <div class="main">
+                <%- include('../partials/navBar') %>
+                <div class="mainPage">
+                    <div class="pageTable">
+                        <%- include('../partials/tableHead') %>
+                       <%- include('../partials/table') %>
+
+                        <!-- Employee Not Found Alert -->
+
+                        <div class="employeeNotFound" id="employeeNotFound">
+                            <i class="fa-solid fa-ban"></i>
+                            <span>Employee not found !</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Pagination -->
+
+                <%- include('../partials/pagination') %>
+
+                <!-- <hr class="main-pg"> -->
+
+
+                <!-- footer -->
+
+                <%- include('../partials/footer') %>
+            </div>
+        </div>
+
+        <!-- Add Employee Form -->
+        <%- include('../partials/addEmployee') %>
+        <!-- Employee Added Successfully popup -->
+        <div class="employeeAddedPopup" id="employeeAddedPopup">
+            <div class="addpop">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <span>Employee added succesfullyy !</span>
+            </div>
+        </div>
+
+        <!-- Employee Edited Successfully popup -->
+        <div class="employeeEditedPopup" id="employeeEditedPopup">
+            <div class="editpop">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>Employee Edited succesfullyy !</span>
+            </div>
+        </div>
+
+        <!-- Employee Deleted Successfully popup -->
+        <div class="employeeDeletedPopup" id="employeeDeletedPopup">
+            <div class="deletepop">
+                <i class="fa-solid fa-trash"></i>
+                <span>Employee Deleted succesfullyy !</span>
+            </div>
+        </div>
+
+
+
+        <!-- Edit Employee Form -->
+
+        <%- include('../partials/editEmployee') %>
+    </div>
+
+    <!-- Delete Alert-->
+
+    <div class="deleteEmployePopup" id="deleteEmployePopup">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cardHeader  d-flex align-items-center justify-content-between">
+                            <h5 class="px-0">Delete Employee</h5>
+                            <button id="closeBtn" onclick="closeDeletePopup()" type="button"
+                                class="closeAction border-0"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="dialogue">Are you sure you want to delete this employee?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cardFooter d-flex justify-content-end gap-2">
+                        <button onclick="closeDeletePopup()" type="submit" class="footer-btn  btn px-4 py-3 btn-light">
+                            <p class="btnTxt ">Cancel</p>
+                        </button>
+                        <button onclick="closeDeletePopup()" type="submit" id="deleteEmployeeId"
+                            class="footer-btn btn px-4 py-3 btn-danger">
+                            <p class="btnTxt">Delete</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <div id="overlay" class="overlay">
+
+    </div>
+    <script src="js/appPg1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

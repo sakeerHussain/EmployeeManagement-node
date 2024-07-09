@@ -1,0 +1,190 @@
+<div id="editEmployeeForm" class=" ">
+    <div class="container">
+        <div class="col-md-12">
+            <form id="editEmp">
+                <div class="form">
+                    <div class="row">
+                        <div class="col-md-12 d-flex align-items-center justify-content-between mb-4">
+                            <p class="page_heading h5">Edit Employee</p>
+                            <button type="button" class="closeAction border-0" onclick="closeEditForm()"><i
+                                    class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+
+                        <div class="imageHolder d-flex gap-3 align-items-center mb-4">
+                            <div class="img_input edit_employee">
+                                <img id="edit_EmployeeImage" src="./images/employee.png" alt="">
+                            </div>
+                            <div class="changeAction">
+                                <input type="file" accept="/image*" id="edit_upload_file" style="display: none;">
+                                <label class="btnTxt" for="edit_upload_file" id="edit-EmployeeImage">Change</label>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row data_input">
+
+                        <div class="col-md-3 mb-4">
+                            <label for="salutation" class="heading-main mb-3">Salutation</label>
+                            <select id="editSalutation" class="form-select px-3 py-2"
+                                aria-label="Default select example">
+                                <option selected>select</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Ms">Ms</option>
+                            </select>
+
+                            <span id="editSalutationError" class="error"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <label for="firstName-editEmployee" class="heading-main mb-3">First Name </label>
+                            <input id="editFirstName" class="form-control px-3 py-2" type="text" placeholder="john">
+                            <span id="editFirstNameError" class="error"></span>
+                        </div>
+                        <div class="col-md-5 mb-4">
+                            <label for="lastName-editEmployee" class="heading-main mb-3">Last Name </label>
+                            <input id="editLastName" class="form-control px-3 py-2" type="text" placeholder="Doe">
+                            <span id="editLastNameError" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label for="email-editEmployee" class="heading-main mb-3">Email
+                                address</label>
+                            <input type="email" class="form-control px-3 py-2" id="editEmail"
+                                placeholder="mail@simmmple.com">
+                            <span id="editEmailError" class="error"></span>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label for="mobileNumber" class="heading-main mb-3">Mobile Number </label>
+                            <input id="editMobileNumber" class="form-control px-3 py-2" type="tel"
+                                placeholder="enter mobile number">
+                            <span id="EditMobileNumberError" class="error"></span>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-6 mb-4">
+                            <label for="date-editEmployee" class="heading-main mb-3">Date of Birth</label>
+                            <input id="editdob" class="form-control px-3 py-2" type="date"
+                                placeholder="select date of birth">
+
+                            <span id="editdobError" class="error"></span>
+                        </div>
+
+                        <div class="col-md-6 d-flex flex-column mb-4">
+                            <div class="heading-main mb-4">
+                                <label for="gender">Gender</label>
+                            </div>
+
+                            <div class="d-flex gap-5">
+                                <!-- First radio button option: Male -->
+                                <div class="d-flex gap-2">
+                                    <input id="editMale" class="form-check-input" type="radio" name="genderEdit"
+                                        value="male">
+                                    <label for="flexRadioDefault1" class="radio-btn">Male</label>
+
+                                </div>
+                                <!-- Second radio button option: Female -->
+                                <div class="d-flex gap-2">
+                                    <input id="editFemale" class="form-check-input" type="radio" name="genderEdit"
+                                        value="female">
+                                    <label for="flexRadioDefault1" class="radio-btn">Female</label>
+
+                                </div>
+                                <span id="genderEditError" class="error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-md-12 mb-4">
+                                <label for="qualification-editEmployee" class="heading mb-3">Qualification</label>
+                                <input id="editQualification" class="form-control px-3 py-2" type="text"
+                                    placeholder="enter qualifications">
+
+                                <span id="editQualificationError" class="error"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <label for="address-editEmployee" class="heading-main mb-3">Address</label>
+                            <input id="editAddress" class="form-control px-3 py-2" type="text"
+                                placeholder="enter address">
+
+                            <span id="editAddressError" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-6 mb-4">
+                            <label for="country" class="heading-main mb-3">country </label>
+                            <select id="editCountry" class="form-select px-3 py-2" aria-label="Default select example">
+                                <option selected>select country</option>
+                                <option value="India">India</option>
+                                <option value="China">China</option>
+                                <option value="USA">USA</option>
+                            </select>
+
+                            <span id="editCountryError" class="error"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <label for="state" class="heading-main mb-3">state</label>
+                            <select id="editState" class="form-select px-3 py-2" aria-label="Default select example">
+                                <option selected>select state</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="TamilNadu">TamilNadu</option>
+                                <option value="Punjab">Punjab</option>
+                            </select>
+
+                            <span id="editStateError" class="error"></span>
+                        </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-6 mb-4">
+                            <label for="city-editEmployee" class="heading-main mb-3">City</label>
+                            <input id="editCity" class="form-control px-3 py-2" type="text" placeholder="enter city">
+
+
+                            <span id="editCityError" class="error"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <label for="pinZip-editEmployee" class="heading-main mb-3">Pin/Zip</label>
+                            <input id="editPin" class="form-control px-3 py-2" type="text" placeholder="enter pin/zip">
+
+                            <span id="editPinError" class="error"></span>
+
+                        </div>
+
+                    </div>
+                    <div class="row pb-3">
+                        <div class=" col-lg-12 justify-content-end ">
+                            <div class="form-footer d-flex gap-2 ">
+                                <button type="button" id="" onclick="closeEditForm()" //onclick="close()"
+                                    class=" footer-btn px-4 py-3 btn-lg btn btn-light ">
+                                    <p class="btn-txt">cancel</p>
+                                </button>
+                                <button type="button" id="saveEditEmployee"
+                                    class=" footer-btn px-4 py-3 btn-lg btn btn-primary ">
+                                    <p class="btn-txt">Save changes</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
