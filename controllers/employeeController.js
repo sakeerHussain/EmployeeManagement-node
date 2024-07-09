@@ -216,3 +216,5 @@ module.exports = {
     deleteEmployee,
     searchEmployee
 }
+
+// this is a dummy command
